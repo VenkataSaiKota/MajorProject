@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Hospital Diagnostic Suite" parallel="false">
+
+    <test name="Smoke Test - Hospital Search">
+        
+        <classes>
+            <class name="Pages.HospitalSearchPage"/>
+            <class name="Pages.DiagnosticPage"/>
+            
+        </classes>
+    </test>
+
+</suite>

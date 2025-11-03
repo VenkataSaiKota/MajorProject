@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Hospital Diagnostic Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Hospital_Diagnostic_Suite" class="navigator-link ">
+                    <span>C:\Users\2440823\eclipse-workspace\MajorProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Hospital_Diagnostic_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Hospital_Diagnostic_Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Hospital_Diagnostic_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Hospital_Diagnostic_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Hospital_Diagnostic_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Hospital_Diagnostic_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" class="hide-methods passed suite-Hospital_Diagnostic_Suite"> (hide)</a> <!-- hide-methods passed suite-Hospital_Diagnostic_Suite -->
+                      <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" class="show-methods passed suite-Hospital_Diagnostic_Suite"> (show)</a> <!-- show-methods passed suite-Hospital_Diagnostic_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Hospital_Diagnostic_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" title="Pages.DiagnosticPage" class="method navigator-link" hash-for-method="clickLabTests">clickLabTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" title="Pages.DiagnosticPage" class="method navigator-link" hash-for-method="diagnostic">diagnostic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" title="Pages.HospitalSearchPage" class="method navigator-link" hash-for-method="extractHospitalNames">extractHospitalNames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" title="Pages.HospitalSearchPage" class="method navigator-link" hash-for-method="filterHospitals">filterHospitals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" title="Pages.DiagnosticPage" class="method navigator-link" hash-for-method="getCityNames">getCityNames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" title="Pages.HospitalSearchPage" class="method navigator-link" hash-for-method="searchHospitals">searchHospitals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospital_Diagnostic_Suite" title="Pages.HospitalSearchPage" class="method navigator-link" hash-for-method="setLocationAndSearch">setLocationAndSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Hospital_Diagnostic_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Hospital_Diagnostic_Suite" class="panel Hospital_Diagnostic_Suite">
+          <div class="suite-Hospital_Diagnostic_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.DiagnosticPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickLabTests">
+                  </a> <!-- clickLabTests -->
+                  <span class="method-name">clickLabTests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="diagnostic">
+                  </a> <!-- diagnostic -->
+                  <span class="method-name">diagnostic</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityNames">
+                  </a> <!-- getCityNames -->
+                  <span class="method-name">getCityNames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hospital_Diagnostic_Suite-class-passed -->
+          <div class="suite-Hospital_Diagnostic_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.HospitalSearchPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="extractHospitalNames">
+                  </a> <!-- extractHospitalNames -->
+                  <span class="method-name">extractHospitalNames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterHospitals">
+                  </a> <!-- filterHospitals -->
+                  <span class="method-name">filterHospitals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHospitals">
+                  </a> <!-- searchHospitals -->
+                  <span class="method-name">searchHospitals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setLocationAndSearch">
+                  </a> <!-- setLocationAndSearch -->
+                  <span class="method-name">setLocationAndSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hospital_Diagnostic_Suite-class-passed -->
+        </div> <!-- panel Hospital_Diagnostic_Suite -->
+        <div panel-name="test-xml-Hospital_Diagnostic_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2440823\eclipse-workspace\MajorProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Hospital Diagnostic Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Smoke Test - Hospital Search&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.HospitalSearchPage&quot;/&gt;
+      &lt;class name=&quot;Pages.DiagnosticPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke Test - Hospital Search --&gt;
+&lt;/suite&gt; &lt;!-- Hospital Diagnostic Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Hospital_Diagnostic_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Hospital Diagnostic Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke Test - Hospital Search (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Hospital_Diagnostic_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Hospital Diagnostic Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">diagnostic</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">clickLabTests</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">diagnostic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCityNames</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">hospital</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">extractHospitalNames</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filterHospitals</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchHospitals</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">setLocationAndSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Hospital_Diagnostic_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Hospital Diagnostic Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Hospital_Diagnostic_Suite');
+function tableData_Hospital_Diagnostic_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'extractHospitalNames')
+data.setCell(0, 2, 'Pages.HospitalSearchPage')
+data.setCell(0, 3, 56904);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'setLocationAndSearch')
+data.setCell(1, 2, 'Pages.HospitalSearchPage')
+data.setCell(1, 3, 10993);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchHospitals')
+data.setCell(2, 2, 'Pages.HospitalSearchPage')
+data.setCell(2, 3, 4152);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getCityNames')
+data.setCell(3, 2, 'Pages.DiagnosticPage')
+data.setCell(3, 3, 3349);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickLabTests')
+data.setCell(4, 2, 'Pages.DiagnosticPage')
+data.setCell(4, 3, 2443);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'filterHospitals')
+data.setCell(5, 2, 'Pages.HospitalSearchPage')
+data.setCell(5, 3, 1402);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'diagnostic')
+data.setCell(6, 2, 'Pages.DiagnosticPage')
+data.setCell(6, 3, 1150);
+window.suiteTableData['Hospital_Diagnostic_Suite']= { tableData: data, tableDiv: 'times-div-Hospital_Diagnostic_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Hospital_Diagnostic_Suite">
+              </div> <!-- times-div-Hospital_Diagnostic_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Hospital_Diagnostic_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Hospital Diagnostic Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Hospital_Diagnostic_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Hospital_Diagnostic_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.HospitalSearchPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">setLocationAndSearch</span>
+                <span class="method-start">26103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">filterHospitals</span>
+                <span class="method-start">37130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">extractHospitalNames</span>
+                <span class="method-start">38541 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchHospitals</span>
+                <span class="method-start">95463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">99631 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.DiagnosticPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">106467 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">clickLabTests</span>
+                <span class="method-start">117610 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityNames</span>
+                <span class="method-start">120057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">diagnostic</span>
+                <span class="method-start">123413 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">124563 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
