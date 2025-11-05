@@ -2,69 +2,101 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-03T09:10:05 IST" name="Hospital Diagnostic Suite" finished-at="2025-11-03T09:12:16 IST" duration-ms="130909">
+  <suite started-at="2025-11-04T16:29:23 IST" name="Suite" finished-at="2025-11-04T16:30:22 IST" duration-ms="59016">
     <groups>
       <group name="diagnostic">
-        <method signature="DiagnosticPage.clickLabTests()[pri:0, instance:Pages.DiagnosticPage@2cd76f31]" name="clickLabTests" class="Pages.DiagnosticPage"/>
-        <method signature="DiagnosticPage.getCityNames()[pri:1, instance:Pages.DiagnosticPage@2cd76f31]" name="getCityNames" class="Pages.DiagnosticPage"/>
-        <method signature="DiagnosticPage.diagnostic()[pri:2, instance:Pages.DiagnosticPage@2cd76f31]" name="diagnostic" class="Pages.DiagnosticPage"/>
+        <method signature="DiagnosticTest.testClickLabTests()[pri:0, instance:Tests.DiagnosticTest@17f7cd29]" name="testClickLabTests" class="Tests.DiagnosticTest"/>
+        <method signature="DiagnosticTest.testGetCityNames()[pri:1, instance:Tests.DiagnosticTest@17f7cd29]" name="testGetCityNames" class="Tests.DiagnosticTest"/>
+        <method signature="DiagnosticTest.testWriteCityNamesToExcel()[pri:2, instance:Tests.DiagnosticTest@17f7cd29]" name="testWriteCityNamesToExcel" class="Tests.DiagnosticTest"/>
       </group> <!-- diagnostic -->
       <group name="hospital">
-        <method signature="HospitalSearchPage.setLocationAndSearch()[pri:0, instance:Pages.HospitalSearchPage@4e08711f]" name="setLocationAndSearch" class="Pages.HospitalSearchPage"/>
-        <method signature="HospitalSearchPage.filterHospitals()[pri:1, instance:Pages.HospitalSearchPage@4e08711f]" name="filterHospitals" class="Pages.HospitalSearchPage"/>
-        <method signature="HospitalSearchPage.extractHospitalNames()[pri:2, instance:Pages.HospitalSearchPage@4e08711f]" name="extractHospitalNames" class="Pages.HospitalSearchPage"/>
-        <method signature="HospitalSearchPage.searchHospitals()[pri:3, instance:Pages.HospitalSearchPage@4e08711f]" name="searchHospitals" class="Pages.HospitalSearchPage"/>
+        <method signature="HospitalSearchTest.testSetLocationAndSearch(java.lang.String,java.lang.String)[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" name="testSetLocationAndSearch" class="Tests.HospitalSearchTest"/>
+        <method signature="HospitalSearchTest.testFilterHospitals()[pri:1, instance:Tests.HospitalSearchTest@c0c2f8d]" name="testFilterHospitals" class="Tests.HospitalSearchTest"/>
+        <method signature="HospitalSearchTest.testExtractHospitalNames()[pri:2, instance:Tests.HospitalSearchTest@c0c2f8d]" name="testExtractHospitalNames" class="Tests.HospitalSearchTest"/>
+        <method signature="HospitalSearchTest.testWriteToExcel()[pri:3, instance:Tests.HospitalSearchTest@c0c2f8d]" name="testWriteToExcel" class="Tests.HospitalSearchTest"/>
       </group> <!-- hospital -->
     </groups>
-    <test started-at="2025-11-03T09:10:05 IST" name="Smoke Test - Hospital Search" finished-at="2025-11-03T09:12:16 IST" duration-ms="130909">
-      <class name="Pages.DiagnosticPage">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:Pages.DiagnosticPage@2cd76f31]" started-at="2025-11-03T09:11:52 IST" name="setDriver" finished-at="2025-11-03T09:12:03 IST" duration-ms="11141" status="PASS">
+    <test started-at="2025-11-04T16:29:23 IST" name="Test" finished-at="2025-11-04T16:30:22 IST" duration-ms="59016">
+      <class name="Tests.HospitalSearchTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:29:11 IST" name="setDriver" finished-at="2025-11-04T16:29:23 IST" duration-ms="12080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="clickLabTests()[pri:0, instance:Pages.DiagnosticPage@2cd76f31]" started-at="2025-11-03T09:12:03 IST" name="clickLabTests" finished-at="2025-11-03T09:12:05 IST" duration-ms="2443" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:29:23 IST" name="initPage" finished-at="2025-11-04T16:29:24 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickLabTests -->
-        <test-method signature="getCityNames()[pri:1, instance:Pages.DiagnosticPage@2cd76f31]" started-at="2025-11-03T09:12:05 IST" name="getCityNames" finished-at="2025-11-03T09:12:09 IST" duration-ms="3349" status="PASS">
+        </test-method> <!-- initPage -->
+        <test-method signature="testSetLocationAndSearch(java.lang.String,java.lang.String)[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:29:24 IST" name="testSetLocationAndSearch" data-provider="excelData" finished-at="2025-11-04T16:29:40 IST" duration-ms="16573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hospital]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getCityNames -->
-        <test-method signature="diagnostic()[pri:2, instance:Pages.DiagnosticPage@2cd76f31]" started-at="2025-11-03T09:12:09 IST" name="diagnostic" finished-at="2025-11-03T09:12:10 IST" duration-ms="1150" status="PASS">
+        </test-method> <!-- testSetLocationAndSearch -->
+        <test-method signature="testFilterHospitals()[pri:1, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:29:40 IST" name="testFilterHospitals" finished-at="2025-11-04T16:29:41 IST" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- diagnostic -->
-        <test-method is-config="true" signature="Quit()[pri:0, instance:Pages.DiagnosticPage@2cd76f31]" started-at="2025-11-03T09:12:10 IST" name="Quit" finished-at="2025-11-03T09:12:16 IST" duration-ms="6310" status="PASS">
+        </test-method> <!-- testFilterHospitals -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:29:40 IST" name="initPage" finished-at="2025-11-04T16:29:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testExtractHospitalNames()[pri:2, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:29:41 IST" name="testExtractHospitalNames" finished-at="2025-11-04T16:30:07 IST" duration-ms="26422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExtractHospitalNames -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:29:41 IST" name="initPage" finished-at="2025-11-04T16:29:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:30:07 IST" name="initPage" finished-at="2025-11-04T16:30:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testWriteToExcel()[pri:3, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:30:07 IST" name="testWriteToExcel" finished-at="2025-11-04T16:30:08 IST" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWriteToExcel -->
+        <test-method is-config="true" signature="Quit()[pri:0, instance:Tests.HospitalSearchTest@c0c2f8d]" started-at="2025-11-04T16:30:22 IST" name="Quit" finished-at="2025-11-04T16:30:28 IST" duration-ms="6622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Quit -->
-      </class> <!-- Pages.DiagnosticPage -->
-      <class name="Pages.HospitalSearchPage">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:Pages.HospitalSearchPage@4e08711f]" started-at="2025-11-03T09:10:05 IST" name="setDriver" finished-at="2025-11-03T09:10:31 IST" duration-ms="26071" status="PASS">
+      </class> <!-- Tests.HospitalSearchTest -->
+      <class name="Tests.DiagnosticTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.DiagnosticTest@17f7cd29]" started-at="2025-11-04T16:30:08 IST" name="initPage" finished-at="2025-11-04T16:30:08 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="setLocationAndSearch()[pri:0, instance:Pages.HospitalSearchPage@4e08711f]" started-at="2025-11-03T09:10:31 IST" name="setLocationAndSearch" finished-at="2025-11-03T09:10:42 IST" duration-ms="10993" status="PASS">
+        </test-method> <!-- initPage -->
+        <test-method signature="testClickLabTests()[pri:0, instance:Tests.DiagnosticTest@17f7cd29]" started-at="2025-11-04T16:30:08 IST" name="testClickLabTests" finished-at="2025-11-04T16:30:20 IST" duration-ms="12046" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setLocationAndSearch -->
-        <test-method signature="filterHospitals()[pri:1, instance:Pages.HospitalSearchPage@4e08711f]" started-at="2025-11-03T09:10:42 IST" name="filterHospitals" finished-at="2025-11-03T09:10:44 IST" duration-ms="1402" status="PASS">
+        </test-method> <!-- testClickLabTests -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.DiagnosticTest@17f7cd29]" started-at="2025-11-04T16:30:20 IST" name="initPage" finished-at="2025-11-04T16:30:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filterHospitals -->
-        <test-method signature="extractHospitalNames()[pri:2, instance:Pages.HospitalSearchPage@4e08711f]" started-at="2025-11-03T09:10:44 IST" name="extractHospitalNames" finished-at="2025-11-03T09:11:41 IST" duration-ms="56904" status="PASS">
+        </test-method> <!-- initPage -->
+        <test-method signature="testGetCityNames()[pri:1, instance:Tests.DiagnosticTest@17f7cd29]" started-at="2025-11-04T16:30:20 IST" name="testGetCityNames" finished-at="2025-11-04T16:30:21 IST" duration-ms="1551" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extractHospitalNames -->
-        <test-method signature="searchHospitals()[pri:3, instance:Pages.HospitalSearchPage@4e08711f]" started-at="2025-11-03T09:11:41 IST" name="searchHospitals" finished-at="2025-11-03T09:11:45 IST" duration-ms="4152" status="PASS">
+        </test-method> <!-- testGetCityNames -->
+        <test-method signature="testWriteCityNamesToExcel()[pri:2, instance:Tests.DiagnosticTest@17f7cd29]" started-at="2025-11-04T16:30:21 IST" name="testWriteCityNamesToExcel" finished-at="2025-11-04T16:30:22 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchHospitals -->
-        <test-method is-config="true" signature="Quit()[pri:0, instance:Pages.HospitalSearchPage@4e08711f]" started-at="2025-11-03T09:11:45 IST" name="Quit" finished-at="2025-11-03T09:11:52 IST" duration-ms="6836" status="PASS">
+        </test-method> <!-- testWriteCityNamesToExcel -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Tests.DiagnosticTest@17f7cd29]" started-at="2025-11-04T16:30:21 IST" name="initPage" finished-at="2025-11-04T16:30:21 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Quit -->
-      </class> <!-- Pages.HospitalSearchPage -->
-    </test> <!-- Smoke Test - Hospital Search -->
-  </suite> <!-- Hospital Diagnostic Suite -->
+        </test-method> <!-- initPage -->
+      </class> <!-- Tests.DiagnosticTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

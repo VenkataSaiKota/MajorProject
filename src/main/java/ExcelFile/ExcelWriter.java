@@ -9,7 +9,17 @@ import java.util.List;
 
 public class ExcelWriter {
 
-    private static Workbook workbook = new XSSFWorkbook();
+    private static  Workbook workbook ;
+    
+
+		public static void resetWorkbook() {
+		    try {
+				workbook = new XSSFWorkbook();
+			} catch (Exception e) {
+				e.printStackTrace();
+			} 
+		}
+
 
     public static void writeHospitalNamesToSheet(List<String> hospitalNames) {
         Sheet sheet1 = workbook.createSheet("Hospital Names");

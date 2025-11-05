@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pages.HospitalSearchPage">
+      <class name="Pages.DiagnosticPage">
         <methods>
-          <include name="setLocationAndSearch"/>
-          <include name="filterHospitals"/>
           <include name="setDriver"/>
+          <include name="diagnostic"/>
           <include name="Quit"/>
         </methods>
-      </class> <!-- Pages.HospitalSearchPage -->
+      </class> <!-- Pages.DiagnosticPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

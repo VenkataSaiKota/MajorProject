@@ -3,13 +3,21 @@
 <suite name="Failed suite [Hospital Diagnostic Suite]">
   <test thread-count="5" name="Smoke Test - Hospital Search(failed)">
     <classes>
-      <class name="Pages.Web">
+      <class name="Pages.DiagnosticPage">
         <methods>
-          <include name="web"/>
+          <include name="getCityNames"/>
           <include name="setDriver"/>
           <include name="Quit"/>
         </methods>
-      </class> <!-- Pages.Web -->
+      </class> <!-- Pages.DiagnosticPage -->
+      <class name="Pages.HospitalSearchPage">
+        <methods>
+          <include name="setLocationAndSearch"/>
+          <include name="filterHospitals"/>
+          <include name="setDriver"/>
+          <include name="Quit"/>
+        </methods>
+      </class> <!-- Pages.HospitalSearchPage -->
     </classes>
   </test> <!-- Smoke Test - Hospital Search(failed) -->
 </suite> <!-- Failed suite [Hospital Diagnostic Suite] -->
