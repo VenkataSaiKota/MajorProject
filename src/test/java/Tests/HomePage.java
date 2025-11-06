@@ -11,7 +11,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-import Report.ReportManager;
+import Report.RM;
 
 
 public class HomePage {
@@ -27,13 +27,13 @@ public class HomePage {
 		 driver = new ChromeDriver();
 	     driver.get(props.getProperty("baseURL"));
 	     driver.manage().window().maximize();
-	     ReportManager.initReport();
+	     RM.initReport();
 		}
 	 
 	 @AfterSuite
 	 public void Quit() throws InterruptedException {
 		 Thread.sleep(5000);
 		 driver.quit();
-		 ReportManager.flushReport();
+		 RM.flushReport();
 	 }
 }

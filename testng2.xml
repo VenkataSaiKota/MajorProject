@@ -1,0 +1,8 @@
+<suite>
+<Test>
+<groups>
+<run>
+<include name="diagnostic"> </include>
+</run></groups>
+</Test>
+</suite>

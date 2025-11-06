@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Tests.CorporateFormDemoTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="fillFormAndCaptureScreenshot"/>
+          <include name="setDriver"/>
+          <include name="Quit"/>
+        </methods>
+      </class> <!-- Tests.CorporateFormDemoTest -->
       <class name="Tests.DiagnosticTest">
         <methods>
+          <include name="testWriteCityNamesToExcel"/>
           <include name="testClickLabTests"/>
           <include name="setDriver"/>
           <include name="Quit"/>
@@ -12,6 +21,17 @@
           <include name="testGetCityNames"/>
         </methods>
       </class> <!-- Tests.DiagnosticTest -->
+      <class name="Tests.HospitalSearchTest">
+        <methods>
+          <include name="testExtractHospitalNames"/>
+          <include name="setDriver"/>
+          <include name="initPage"/>
+          <include name="testSetLocationAndSearch"/>
+          <include name="testFilterHospitals"/>
+          <include name="Quit"/>
+          <include name="testWriteToExcel"/>
+        </methods>
+      </class> <!-- Tests.HospitalSearchTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

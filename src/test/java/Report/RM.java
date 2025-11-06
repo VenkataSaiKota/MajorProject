@@ -3,8 +3,8 @@ package Report;
 import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ReportManager {
-    private static ExtentReports extent;
+public class RM {
+    public static ExtentReports extent;
     private static ExtentTest test;
 
     public static void initReport() {

@@ -44,5 +44,6 @@ public class DiagnosticPage {
         for (WebElement city : cities) {
             cityNames.add(city.getText());
         }
+        driver.navigate().back();
     }
 }
